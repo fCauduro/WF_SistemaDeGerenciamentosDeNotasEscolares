@@ -1,4 +1,4 @@
-﻿using MySql.Data.MySqlClient;
+﻿//using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -45,6 +45,9 @@ namespace WF_SistemaDeGerenciamentosDeNotasEscolares
             label2 = new Label();
             label3 = new Label();
             senha = new TextBox();
+            btnEntrar = new Button();
+            pictureBox1 = new PictureBox();
+            ((ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -57,7 +60,6 @@ namespace WF_SistemaDeGerenciamentosDeNotasEscolares
             label1.TabIndex = 0;
             label1.Text = "Sistema de Gerenciamento de Notas Escolares - login";
             label1.TextAlign = ContentAlignment.TopCenter;
-         
             // 
             // usuario
             // 
@@ -65,7 +67,6 @@ namespace WF_SistemaDeGerenciamentosDeNotasEscolares
             usuario.Name = "usuario";
             usuario.Size = new Size(100, 23);
             usuario.TabIndex = 1;
-            usuario.TextChanged += this.usuario_TextChanged;
             // 
             // label2
             // 
@@ -84,21 +85,42 @@ namespace WF_SistemaDeGerenciamentosDeNotasEscolares
             label3.Size = new Size(39, 15);
             label3.TabIndex = 4;
             label3.Text = "Senha";
-            label3.Click += this.label3_Click;
             // 
             // senha
             // 
             senha.Location = new Point(152, 152);
             senha.Name = "senha";
+            senha.PasswordChar = '#';
             senha.Size = new Size(100, 23);
             senha.TabIndex = 3;
-            senha.TextChanged += this.textBox2_TextChanged;
+            // 
+            // btnEntrar
+            // 
+            btnEntrar.Font = new Font("Franklin Gothic Medium", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnEntrar.Location = new Point(152, 215);
+            btnEntrar.Name = "btnEntrar";
+            btnEntrar.Size = new Size(100, 37);
+            btnEntrar.TabIndex = 5;
+            btnEntrar.Text = "Entrar";
+            btnEntrar.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.senac_logo;
+            pictureBox1.Location = new Point(318, 85);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(319, 167);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 6;
+            pictureBox1.TabStop = false;
             // 
             // login
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(725, 450);
+            Controls.Add(pictureBox1);
+            Controls.Add(btnEntrar);
             Controls.Add(label3);
             Controls.Add(senha);
             Controls.Add(label2);
@@ -106,7 +128,8 @@ namespace WF_SistemaDeGerenciamentosDeNotasEscolares
             Controls.Add(label1);
             Name = "login";
             Text = "Sistema de Gerenciamento de Notas Escolares";
-            Load += this.login_Load;
+            Load += login_Load;
+            ((ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -118,5 +141,7 @@ namespace WF_SistemaDeGerenciamentosDeNotasEscolares
         private Label label2;
         private Label label3;
         private TextBox senha;
+        private Button btnEntrar;
+        private PictureBox pictureBox1;
     }
 }

@@ -1,4 +1,4 @@
-using MySql.Data.MySqlClient;
+//using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,6 +18,11 @@ namespace WF_SistemaDeGerenciamentosDeNotasEscolares
         public login()
         {
             InitializeComponent();
+        }
+
+        private void login_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
