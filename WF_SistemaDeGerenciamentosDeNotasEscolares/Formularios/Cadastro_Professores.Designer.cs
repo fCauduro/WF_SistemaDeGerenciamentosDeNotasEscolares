@@ -29,43 +29,48 @@
         private void InitializeComponent()
         {
             btnEntrar = new Button();
-            textBox6 = new TextBox();
+            txtNascimento = new TextBox();
             label6 = new Label();
-            textBox7 = new TextBox();
+            txtUsuario = new TextBox();
             label7 = new Label();
-            textBox8 = new TextBox();
+            txtSenha = new TextBox();
             label8 = new Label();
-            textBox5 = new TextBox();
+            txtCPF = new TextBox();
             CPF = new Label();
-            textBox4 = new TextBox();
+            txtMatricula = new TextBox();
             label5 = new Label();
-            textBox3 = new TextBox();
+            txtTelefone = new TextBox();
             label4 = new Label();
-            textBox2 = new TextBox();
+            txtEmail = new TextBox();
             label3 = new Label();
-            textBox1 = new TextBox();
+            txtEndereco = new TextBox();
             label2 = new Label();
             txtnome = new TextBox();
             Nome = new Label();
             label1 = new Label();
+            lbldisciplina = new Label();
+            comboBox1 = new ComboBox();
+            btnExcluir = new Button();
+            btnEditar = new Button();
+            groupBox1 = new GroupBox();
             SuspendLayout();
             // 
             // btnEntrar
             // 
             btnEntrar.Font = new Font("Franklin Gothic Medium", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnEntrar.Location = new Point(214, 396);
+            btnEntrar.Location = new Point(214, 443);
             btnEntrar.Name = "btnEntrar";
             btnEntrar.Size = new Size(142, 37);
             btnEntrar.TabIndex = 39;
             btnEntrar.Text = "Cadastrar";
             btnEntrar.UseVisualStyleBackColor = true;
             // 
-            // textBox6
+            // txtNascimento
             // 
-            textBox6.Location = new Point(126, 297);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(259, 23);
-            textBox6.TabIndex = 38;
+            txtNascimento.Location = new Point(126, 297);
+            txtNascimento.Name = "txtNascimento";
+            txtNascimento.Size = new Size(259, 23);
+            txtNascimento.TabIndex = 38;
             // 
             // label6
             // 
@@ -76,12 +81,12 @@
             label6.TabIndex = 37;
             label6.Text = "Nascimento:";
             // 
-            // textBox7
+            // txtUsuario
             // 
-            textBox7.Location = new Point(126, 331);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(354, 23);
-            textBox7.TabIndex = 36;
+            txtUsuario.Location = new Point(126, 331);
+            txtUsuario.Name = "txtUsuario";
+            txtUsuario.Size = new Size(354, 23);
+            txtUsuario.TabIndex = 36;
             // 
             // label7
             // 
@@ -92,12 +97,12 @@
             label7.TabIndex = 35;
             label7.Text = "usuario:";
             // 
-            // textBox8
+            // txtSenha
             // 
-            textBox8.Location = new Point(126, 367);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(633, 23);
-            textBox8.TabIndex = 34;
+            txtSenha.Location = new Point(126, 367);
+            txtSenha.Name = "txtSenha";
+            txtSenha.Size = new Size(363, 23);
+            txtSenha.TabIndex = 34;
             // 
             // label8
             // 
@@ -108,12 +113,12 @@
             label8.TabIndex = 33;
             label8.Text = "senha:";
             // 
-            // textBox5
+            // txtCPF
             // 
-            textBox5.Location = new Point(126, 115);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(259, 23);
-            textBox5.TabIndex = 32;
+            txtCPF.Location = new Point(126, 115);
+            txtCPF.Name = "txtCPF";
+            txtCPF.Size = new Size(259, 23);
+            txtCPF.TabIndex = 32;
             // 
             // CPF
             // 
@@ -124,12 +129,12 @@
             CPF.TabIndex = 31;
             CPF.Text = "CPF:";
             // 
-            // textBox4
+            // txtMatricula
             // 
-            textBox4.Location = new Point(126, 151);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(259, 23);
-            textBox4.TabIndex = 30;
+            txtMatricula.Location = new Point(126, 151);
+            txtMatricula.Name = "txtMatricula";
+            txtMatricula.Size = new Size(259, 23);
+            txtMatricula.TabIndex = 30;
             // 
             // label5
             // 
@@ -140,12 +145,12 @@
             label5.TabIndex = 29;
             label5.Text = "Matricula:";
             // 
-            // textBox3
+            // txtTelefone
             // 
-            textBox3.Location = new Point(126, 185);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(259, 23);
-            textBox3.TabIndex = 28;
+            txtTelefone.Location = new Point(126, 185);
+            txtTelefone.Name = "txtTelefone";
+            txtTelefone.Size = new Size(259, 23);
+            txtTelefone.TabIndex = 28;
             // 
             // label4
             // 
@@ -156,12 +161,12 @@
             label4.TabIndex = 27;
             label4.Text = "Telefone:";
             // 
-            // textBox2
+            // txtEmail
             // 
-            textBox2.Location = new Point(126, 219);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(354, 23);
-            textBox2.TabIndex = 26;
+            txtEmail.Location = new Point(126, 219);
+            txtEmail.Name = "txtEmail";
+            txtEmail.Size = new Size(354, 23);
+            txtEmail.TabIndex = 26;
             // 
             // label3
             // 
@@ -172,12 +177,12 @@
             label3.TabIndex = 25;
             label3.Text = "email:";
             // 
-            // textBox1
+            // txtEndereco
             // 
-            textBox1.Location = new Point(126, 255);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(633, 23);
-            textBox1.TabIndex = 24;
+            txtEndereco.Location = new Point(126, 255);
+            txtEndereco.Name = "txtEndereco";
+            txtEndereco.Size = new Size(633, 23);
+            txtEndereco.TabIndex = 24;
             // 
             // label2
             // 
@@ -215,33 +220,88 @@
             label1.Text = "Cadastro de Professores";
             label1.TextAlign = ContentAlignment.TopCenter;
             // 
+            // lbldisciplina
+            // 
+            lbldisciplina.AutoSize = true;
+            lbldisciplina.Location = new Point(42, 399);
+            lbldisciplina.Name = "lbldisciplina";
+            lbldisciplina.Size = new Size(58, 15);
+            lbldisciplina.TabIndex = 40;
+            lbldisciplina.Text = "Disciplina";
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "portugues", "matematica" });
+            comboBox1.Location = new Point(126, 404);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(178, 23);
+            comboBox1.TabIndex = 41;
+            // 
+            // btnExcluir
+            // 
+            btnExcluir.Font = new Font("Franklin Gothic Medium", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnExcluir.Location = new Point(543, 443);
+            btnExcluir.Name = "btnExcluir";
+            btnExcluir.Size = new Size(142, 37);
+            btnExcluir.TabIndex = 42;
+            btnExcluir.Text = "Excluir";
+            btnExcluir.UseVisualStyleBackColor = true;
+            // 
+            // btnEditar
+            // 
+            btnEditar.Font = new Font("Franklin Gothic Medium", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnEditar.Location = new Point(385, 443);
+            btnEditar.Name = "btnEditar";
+            btnEditar.Size = new Size(142, 37);
+            btnEditar.TabIndex = 43;
+            btnEditar.Text = "Editar";
+            btnEditar.UseVisualStyleBackColor = true;
+            // 
+            // groupBox1
+            // 
+            groupBox1.Location = new Point(12, 5);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(776, 513);
+            groupBox1.TabIndex = 44;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Cadastro";
+            // 
             // Cadastro_Professores
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(800, 530);
+            Controls.Add(btnEditar);
+            Controls.Add(btnExcluir);
+            Controls.Add(comboBox1);
+            Controls.Add(lbldisciplina);
             Controls.Add(btnEntrar);
-            Controls.Add(textBox6);
+            Controls.Add(txtNascimento);
             Controls.Add(label6);
-            Controls.Add(textBox7);
+            Controls.Add(txtUsuario);
             Controls.Add(label7);
-            Controls.Add(textBox8);
+            Controls.Add(txtSenha);
             Controls.Add(label8);
-            Controls.Add(textBox5);
+            Controls.Add(txtCPF);
             Controls.Add(CPF);
-            Controls.Add(textBox4);
+            Controls.Add(txtMatricula);
             Controls.Add(label5);
-            Controls.Add(textBox3);
+            Controls.Add(txtTelefone);
             Controls.Add(label4);
-            Controls.Add(textBox2);
+            Controls.Add(txtEmail);
             Controls.Add(label3);
-            Controls.Add(textBox1);
+            Controls.Add(txtEndereco);
             Controls.Add(label2);
             Controls.Add(txtnome);
             Controls.Add(Nome);
             Controls.Add(label1);
+            Controls.Add(groupBox1);
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "Cadastro_Professores";
-            Text = "Cadastro_Professores";
+            Text = "Cadastro Professores";
+            Load += this.Cadastro_Professores_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -249,24 +309,29 @@
         #endregion
 
         private Button btnEntrar;
-        private TextBox textBox6;
+        private TextBox txtNascimento;
         private Label label6;
-        private TextBox textBox7;
+        private TextBox txtUsuario;
         private Label label7;
-        private TextBox textBox8;
+        private TextBox txtSenha;
         private Label label8;
-        private TextBox textBox5;
+        private TextBox txtCPF;
         private Label CPF;
-        private TextBox textBox4;
+        private TextBox txtMatricula;
         private Label label5;
-        private TextBox textBox3;
+        private TextBox txtTelefone;
         private Label label4;
-        private TextBox textBox2;
+        private TextBox txtEmail;
         private Label label3;
-        private TextBox textBox1;
+        private TextBox txtEndereco;
         private Label label2;
         private TextBox txtnome;
         private Label Nome;
         private Label label1;
+        private Label lbldisciplina;
+        private ComboBox comboBox1;
+        private Button btnExcluir;
+        private Button btnEditar;
+        private GroupBox groupBox1;
     }
 }

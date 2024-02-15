@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <PackageReference Include="SQLitePCLRaw.core" Version="2.1.8" />
+    <PackageReference Include="System.Data.SQLite.Core" Version="1.0.118" />
   </ItemGroup>
 
   <ItemGroup>

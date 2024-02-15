@@ -41,38 +41,40 @@ namespace WF_SistemaDeGerenciamentosDeNotasEscolares
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
+            lblCadastroAlunos = new Label();
             Nome = new Label();
             txtnome = new TextBox();
-            textBox1 = new TextBox();
+            txtEndereco = new TextBox();
             label2 = new Label();
-            textBox2 = new TextBox();
+            txtEmail = new TextBox();
             label3 = new Label();
-            textBox3 = new TextBox();
+            txtTelefone = new TextBox();
             label4 = new Label();
-            textBox4 = new TextBox();
+            txtMatricula = new TextBox();
             label5 = new Label();
-            textBox5 = new TextBox();
+            txtCPF = new TextBox();
             CPF = new Label();
-            textBox6 = new TextBox();
+            txtNascimento = new TextBox();
             label6 = new Label();
-            textBox7 = new TextBox();
+            txtUsuario = new TextBox();
             label7 = new Label();
-            textBox8 = new TextBox();
+            txtSenha = new TextBox();
             label8 = new Label();
             btnEntrar = new Button();
+            btnEditar = new Button();
+            btnCancelar = new Button();
             SuspendLayout();
             // 
-            // label1
+            // lblCadastroAlunos
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(189, -2);
-            label1.Name = "label1";
-            label1.Size = new Size(266, 37);
-            label1.TabIndex = 0;
-            label1.Text = "Cadastro de Alunos";
-            label1.TextAlign = ContentAlignment.TopCenter;
+            lblCadastroAlunos.AutoSize = true;
+            lblCadastroAlunos.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblCadastroAlunos.Location = new Point(189, -2);
+            lblCadastroAlunos.Name = "lblCadastroAlunos";
+            lblCadastroAlunos.Size = new Size(266, 37);
+            lblCadastroAlunos.TabIndex = 0;
+            lblCadastroAlunos.Text = "Cadastro de Alunos";
+            lblCadastroAlunos.TextAlign = ContentAlignment.TopCenter;
             // 
             // Nome
             // 
@@ -90,12 +92,12 @@ namespace WF_SistemaDeGerenciamentosDeNotasEscolares
             txtnome.Size = new Size(468, 23);
             txtnome.TabIndex = 2;
             // 
-            // textBox1
+            // txtEndereco
             // 
-            textBox1.Location = new Point(101, 235);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(633, 23);
-            textBox1.TabIndex = 4;
+            txtEndereco.Location = new Point(101, 235);
+            txtEndereco.Name = "txtEndereco";
+            txtEndereco.Size = new Size(633, 23);
+            txtEndereco.TabIndex = 4;
             // 
             // label2
             // 
@@ -106,12 +108,12 @@ namespace WF_SistemaDeGerenciamentosDeNotasEscolares
             label2.TabIndex = 3;
             label2.Text = "Endereço:";
             // 
-            // textBox2
+            // txtEmail
             // 
-            textBox2.Location = new Point(101, 199);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(354, 23);
-            textBox2.TabIndex = 6;
+            txtEmail.Location = new Point(101, 199);
+            txtEmail.Name = "txtEmail";
+            txtEmail.Size = new Size(354, 23);
+            txtEmail.TabIndex = 6;
             // 
             // label3
             // 
@@ -122,12 +124,12 @@ namespace WF_SistemaDeGerenciamentosDeNotasEscolares
             label3.TabIndex = 5;
             label3.Text = "email:";
             // 
-            // textBox3
+            // txtTelefone
             // 
-            textBox3.Location = new Point(101, 165);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(259, 23);
-            textBox3.TabIndex = 8;
+            txtTelefone.Location = new Point(101, 165);
+            txtTelefone.Name = "txtTelefone";
+            txtTelefone.Size = new Size(259, 23);
+            txtTelefone.TabIndex = 8;
             // 
             // label4
             // 
@@ -138,12 +140,12 @@ namespace WF_SistemaDeGerenciamentosDeNotasEscolares
             label4.TabIndex = 7;
             label4.Text = "Telefone:";
             // 
-            // textBox4
+            // txtMatricula
             // 
-            textBox4.Location = new Point(101, 131);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(259, 23);
-            textBox4.TabIndex = 10;
+            txtMatricula.Location = new Point(101, 131);
+            txtMatricula.Name = "txtMatricula";
+            txtMatricula.Size = new Size(259, 23);
+            txtMatricula.TabIndex = 10;
             // 
             // label5
             // 
@@ -154,12 +156,12 @@ namespace WF_SistemaDeGerenciamentosDeNotasEscolares
             label5.TabIndex = 9;
             label5.Text = "Matricula:";
             // 
-            // textBox5
+            // txtCPF
             // 
-            textBox5.Location = new Point(101, 95);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(259, 23);
-            textBox5.TabIndex = 12;
+            txtCPF.Location = new Point(101, 95);
+            txtCPF.Name = "txtCPF";
+            txtCPF.Size = new Size(259, 23);
+            txtCPF.TabIndex = 12;
             // 
             // CPF
             // 
@@ -170,12 +172,12 @@ namespace WF_SistemaDeGerenciamentosDeNotasEscolares
             CPF.TabIndex = 11;
             CPF.Text = "CPF:";
             // 
-            // textBox6
+            // txtNascimento
             // 
-            textBox6.Location = new Point(101, 277);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(259, 23);
-            textBox6.TabIndex = 18;
+            txtNascimento.Location = new Point(101, 277);
+            txtNascimento.Name = "txtNascimento";
+            txtNascimento.Size = new Size(259, 23);
+            txtNascimento.TabIndex = 18;
             // 
             // label6
             // 
@@ -186,12 +188,12 @@ namespace WF_SistemaDeGerenciamentosDeNotasEscolares
             label6.TabIndex = 17;
             label6.Text = "Nascimento:";
             // 
-            // textBox7
+            // txtUsuario
             // 
-            textBox7.Location = new Point(101, 311);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(354, 23);
-            textBox7.TabIndex = 16;
+            txtUsuario.Location = new Point(101, 311);
+            txtUsuario.Name = "txtUsuario";
+            txtUsuario.Size = new Size(354, 23);
+            txtUsuario.TabIndex = 16;
             // 
             // label7
             // 
@@ -202,12 +204,12 @@ namespace WF_SistemaDeGerenciamentosDeNotasEscolares
             label7.TabIndex = 15;
             label7.Text = "usuario:";
             // 
-            // textBox8
+            // txtSenha
             // 
-            textBox8.Location = new Point(101, 347);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(633, 23);
-            textBox8.TabIndex = 14;
+            txtSenha.Location = new Point(101, 347);
+            txtSenha.Name = "txtSenha";
+            txtSenha.Size = new Size(633, 23);
+            txtSenha.TabIndex = 14;
             // 
             // label8
             // 
@@ -221,38 +223,62 @@ namespace WF_SistemaDeGerenciamentosDeNotasEscolares
             // btnEntrar
             // 
             btnEntrar.Font = new Font("Franklin Gothic Medium", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnEntrar.Location = new Point(189, 376);
+            btnEntrar.Location = new Point(144, 390);
             btnEntrar.Name = "btnEntrar";
             btnEntrar.Size = new Size(142, 37);
             btnEntrar.TabIndex = 19;
             btnEntrar.Text = "Cadastrar";
             btnEntrar.UseVisualStyleBackColor = true;
             // 
+            // btnEditar
+            // 
+            btnEditar.Font = new Font("Franklin Gothic Medium", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnEditar.Location = new Point(337, 390);
+            btnEditar.Name = "btnEditar";
+            btnEditar.Size = new Size(142, 37);
+            btnEditar.TabIndex = 20;
+            btnEditar.Text = "Editar";
+            btnEditar.UseVisualStyleBackColor = true;
+            // 
+            // btnCancelar
+            // 
+            btnCancelar.Font = new Font("Franklin Gothic Medium", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnCancelar.Location = new Point(513, 390);
+            btnCancelar.Name = "btnCancelar";
+            btnCancelar.Size = new Size(142, 37);
+            btnCancelar.TabIndex = 21;
+            btnCancelar.Text = "Cancelar";
+            btnCancelar.UseVisualStyleBackColor = true;
+            // 
             // CadAlu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(800, 530);
+            Controls.Add(btnCancelar);
+            Controls.Add(btnEditar);
             Controls.Add(btnEntrar);
-            Controls.Add(textBox6);
+            Controls.Add(txtNascimento);
             Controls.Add(label6);
-            Controls.Add(textBox7);
+            Controls.Add(txtUsuario);
             Controls.Add(label7);
-            Controls.Add(textBox8);
+            Controls.Add(txtSenha);
             Controls.Add(label8);
-            Controls.Add(textBox5);
+            Controls.Add(txtCPF);
             Controls.Add(CPF);
-            Controls.Add(textBox4);
+            Controls.Add(txtMatricula);
             Controls.Add(label5);
-            Controls.Add(textBox3);
+            Controls.Add(txtTelefone);
             Controls.Add(label4);
-            Controls.Add(textBox2);
+            Controls.Add(txtEmail);
             Controls.Add(label3);
-            Controls.Add(textBox1);
+            Controls.Add(txtEndereco);
             Controls.Add(label2);
             Controls.Add(txtnome);
             Controls.Add(Nome);
-            Controls.Add(label1);
+            Controls.Add(lblCadastroAlunos);
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "CadAlu";
             Text = "Cadastro de Alunos";
             ResumeLayout(false);
@@ -261,25 +287,27 @@ namespace WF_SistemaDeGerenciamentosDeNotasEscolares
 
         #endregion
 
-        private Label label1;
+        private Label lblCadastroAlunos;
         private Label Nome;
         private TextBox txtnome;
-        private TextBox textBox1;
+        private TextBox txtEndereco;
         private Label label2;
-        private TextBox textBox2;
+        private TextBox txtEmail;
         private Label label3;
-        private TextBox textBox3;
+        private TextBox txtTelefone;
         private Label label4;
-        private TextBox textBox4;
+        private TextBox txtMatricula;
         private Label label5;
-        private TextBox textBox5;
+        private TextBox txtCPF;
         private Label CPF;
-        private TextBox textBox6;
+        private TextBox txtNascimento;
         private Label label6;
-        private TextBox textBox7;
+        private TextBox txtUsuario;
         private Label label7;
-        private TextBox textBox8;
+        private TextBox txtSenha;
         private Label label8;
         private Button btnEntrar;
+        private Button btnEditar;
+        private Button btnCancelar;
     }
 }

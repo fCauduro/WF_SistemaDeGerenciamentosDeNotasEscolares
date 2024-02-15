@@ -40,26 +40,26 @@ namespace WF_SistemaDeGerenciamentosDeNotasEscolares
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
+            lblTituloLogin = new Label();
             usuario = new TextBox();
-            label2 = new Label();
-            label3 = new Label();
+            lblUsuario = new Label();
+            lblSenha = new Label();
             senha = new TextBox();
             btnEntrar = new Button();
             pictureBox1 = new PictureBox();
             ((ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // label1
+            // lblTituloLogin
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Georgia", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(37, 27);
-            label1.Name = "label1";
-            label1.Size = new Size(663, 29);
-            label1.TabIndex = 0;
-            label1.Text = "Sistema de Gerenciamento de Notas Escolares - login";
-            label1.TextAlign = ContentAlignment.TopCenter;
+            lblTituloLogin.AutoSize = true;
+            lblTituloLogin.Font = new Font("Georgia", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTituloLogin.Location = new Point(37, 27);
+            lblTituloLogin.Name = "lblTituloLogin";
+            lblTituloLogin.Size = new Size(581, 25);
+            lblTituloLogin.TabIndex = 0;
+            lblTituloLogin.Text = "Sistema de Gerenciamento de Notas Escolares - login";
+            lblTituloLogin.TextAlign = ContentAlignment.TopCenter;
             // 
             // usuario
             // 
@@ -68,23 +68,23 @@ namespace WF_SistemaDeGerenciamentosDeNotasEscolares
             usuario.Size = new Size(100, 23);
             usuario.TabIndex = 1;
             // 
-            // label2
+            // lblUsuario
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(58, 97);
-            label2.Name = "label2";
-            label2.Size = new Size(47, 15);
-            label2.TabIndex = 2;
-            label2.Text = "Usuario";
+            lblUsuario.AutoSize = true;
+            lblUsuario.Location = new Point(58, 97);
+            lblUsuario.Name = "lblUsuario";
+            lblUsuario.Size = new Size(47, 15);
+            lblUsuario.TabIndex = 2;
+            lblUsuario.Text = "Usuario";
             // 
-            // label3
+            // lblSenha
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(58, 154);
-            label3.Name = "label3";
-            label3.Size = new Size(39, 15);
-            label3.TabIndex = 4;
-            label3.Text = "Senha";
+            lblSenha.AutoSize = true;
+            lblSenha.Location = new Point(58, 154);
+            lblSenha.Name = "lblSenha";
+            lblSenha.Size = new Size(39, 15);
+            lblSenha.TabIndex = 4;
+            lblSenha.Text = "Senha";
             // 
             // senha
             // 
@@ -118,14 +118,14 @@ namespace WF_SistemaDeGerenciamentosDeNotasEscolares
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(725, 450);
+            ClientSize = new Size(655, 450);
             Controls.Add(pictureBox1);
             Controls.Add(btnEntrar);
-            Controls.Add(label3);
+            Controls.Add(lblSenha);
             Controls.Add(senha);
-            Controls.Add(label2);
+            Controls.Add(lblUsuario);
             Controls.Add(usuario);
-            Controls.Add(label1);
+            Controls.Add(lblTituloLogin);
             Name = "login";
             Text = "Sistema de Gerenciamento de Notas Escolares";
             Load += login_Load;
@@ -136,10 +136,10 @@ namespace WF_SistemaDeGerenciamentosDeNotasEscolares
 
         #endregion
 
-        private Label label1;
+        private Label lblTituloLogin;
         private TextBox usuario;
-        private Label label2;
-        private Label label3;
+        private Label lblUsuario;
+        private Label lblSenha;
         private TextBox senha;
         private Button btnEntrar;
         private PictureBox pictureBox1;
