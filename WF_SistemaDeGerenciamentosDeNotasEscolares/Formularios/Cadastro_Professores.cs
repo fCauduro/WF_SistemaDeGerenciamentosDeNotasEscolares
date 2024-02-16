@@ -16,5 +16,11 @@ namespace WF_SistemaDeGerenciamentosDeNotasEscolares
         {
             InitializeComponent();
         }
+
+        private void Cadastro_Professores_Load(object sender, EventArgs e)
+        {
+            DalNotas.CriarBancoSQLite();
+            DalNotas.CriarTabelaSQLite();
+        }
     }
 }

@@ -53,14 +53,19 @@
             btnExcluir = new Button();
             btnEditar = new Button();
             groupBox1 = new GroupBox();
+            groupBox2 = new GroupBox();
+            dataGridView1 = new DataGridView();
+            groupBox1.SuspendLayout();
+            groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // btnEntrar
             // 
             btnEntrar.Font = new Font("Franklin Gothic Medium", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnEntrar.Location = new Point(214, 443);
+            btnEntrar.Location = new Point(30, 438);
             btnEntrar.Name = "btnEntrar";
-            btnEntrar.Size = new Size(142, 37);
+            btnEntrar.Size = new Size(121, 37);
             btnEntrar.TabIndex = 39;
             btnEntrar.Text = "Cadastrar";
             btnEntrar.UseVisualStyleBackColor = true;
@@ -69,7 +74,7 @@
             // 
             txtNascimento.Location = new Point(126, 297);
             txtNascimento.Name = "txtNascimento";
-            txtNascimento.Size = new Size(259, 23);
+            txtNascimento.Size = new Size(89, 23);
             txtNascimento.TabIndex = 38;
             // 
             // label6
@@ -85,7 +90,7 @@
             // 
             txtUsuario.Location = new Point(126, 331);
             txtUsuario.Name = "txtUsuario";
-            txtUsuario.Size = new Size(354, 23);
+            txtUsuario.Size = new Size(89, 23);
             txtUsuario.TabIndex = 36;
             // 
             // label7
@@ -101,7 +106,7 @@
             // 
             txtSenha.Location = new Point(126, 367);
             txtSenha.Name = "txtSenha";
-            txtSenha.Size = new Size(363, 23);
+            txtSenha.Size = new Size(89, 23);
             txtSenha.TabIndex = 34;
             // 
             // label8
@@ -117,7 +122,7 @@
             // 
             txtCPF.Location = new Point(126, 115);
             txtCPF.Name = "txtCPF";
-            txtCPF.Size = new Size(259, 23);
+            txtCPF.Size = new Size(147, 23);
             txtCPF.TabIndex = 32;
             // 
             // CPF
@@ -133,7 +138,7 @@
             // 
             txtMatricula.Location = new Point(126, 151);
             txtMatricula.Name = "txtMatricula";
-            txtMatricula.Size = new Size(259, 23);
+            txtMatricula.Size = new Size(147, 23);
             txtMatricula.TabIndex = 30;
             // 
             // label5
@@ -149,7 +154,7 @@
             // 
             txtTelefone.Location = new Point(126, 185);
             txtTelefone.Name = "txtTelefone";
-            txtTelefone.Size = new Size(259, 23);
+            txtTelefone.Size = new Size(147, 23);
             txtTelefone.TabIndex = 28;
             // 
             // label4
@@ -165,7 +170,7 @@
             // 
             txtEmail.Location = new Point(126, 219);
             txtEmail.Name = "txtEmail";
-            txtEmail.Size = new Size(354, 23);
+            txtEmail.Size = new Size(192, 23);
             txtEmail.TabIndex = 26;
             // 
             // label3
@@ -181,7 +186,7 @@
             // 
             txtEndereco.Location = new Point(126, 255);
             txtEndereco.Name = "txtEndereco";
-            txtEndereco.Size = new Size(633, 23);
+            txtEndereco.Size = new Size(298, 23);
             txtEndereco.TabIndex = 24;
             // 
             // label2
@@ -197,7 +202,7 @@
             // 
             txtnome.Location = new Point(126, 76);
             txtnome.Name = "txtnome";
-            txtnome.Size = new Size(468, 23);
+            txtnome.Size = new Size(298, 23);
             txtnome.TabIndex = 22;
             // 
             // Nome
@@ -213,7 +218,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(214, 18);
+            label1.Location = new Point(85, 19);
             label1.Name = "label1";
             label1.Size = new Size(327, 37);
             label1.TabIndex = 20;
@@ -235,15 +240,15 @@
             comboBox1.Items.AddRange(new object[] { "portugues", "matematica" });
             comboBox1.Location = new Point(126, 404);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(178, 23);
+            comboBox1.Size = new Size(147, 23);
             comboBox1.TabIndex = 41;
             // 
             // btnExcluir
             // 
             btnExcluir.Font = new Font("Franklin Gothic Medium", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnExcluir.Location = new Point(543, 443);
+            btnExcluir.Location = new Point(302, 438);
             btnExcluir.Name = "btnExcluir";
-            btnExcluir.Size = new Size(142, 37);
+            btnExcluir.Size = new Size(92, 37);
             btnExcluir.TabIndex = 42;
             btnExcluir.Text = "Excluir";
             btnExcluir.UseVisualStyleBackColor = true;
@@ -251,32 +256,53 @@
             // btnEditar
             // 
             btnEditar.Font = new Font("Franklin Gothic Medium", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnEditar.Location = new Point(385, 443);
+            btnEditar.Location = new Point(176, 438);
             btnEditar.Name = "btnEditar";
-            btnEditar.Size = new Size(142, 37);
+            btnEditar.Size = new Size(97, 37);
             btnEditar.TabIndex = 43;
             btnEditar.Text = "Editar";
             btnEditar.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(btnEditar);
+            groupBox1.Controls.Add(btnExcluir);
+            groupBox1.Controls.Add(btnEntrar);
+            groupBox1.Controls.Add(label1);
             groupBox1.Location = new Point(12, 5);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(776, 513);
+            groupBox1.Size = new Size(473, 513);
             groupBox1.TabIndex = 44;
             groupBox1.TabStop = false;
             groupBox1.Text = "Cadastro";
+            // 
+            // groupBox2
+            // 
+            groupBox2.Controls.Add(dataGridView1);
+            groupBox2.Location = new Point(491, 12);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new Size(578, 506);
+            groupBox2.TabIndex = 45;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "groupBox2";
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Dock = DockStyle.Fill;
+            dataGridView1.Location = new Point(3, 19);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.Size = new Size(572, 484);
+            dataGridView1.TabIndex = 0;
             // 
             // Cadastro_Professores
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 530);
-            Controls.Add(btnEditar);
-            Controls.Add(btnExcluir);
+            ClientSize = new Size(1081, 530);
+            Controls.Add(groupBox2);
             Controls.Add(comboBox1);
             Controls.Add(lbldisciplina);
-            Controls.Add(btnEntrar);
             Controls.Add(txtNascimento);
             Controls.Add(label6);
             Controls.Add(txtUsuario);
@@ -295,13 +321,16 @@
             Controls.Add(label2);
             Controls.Add(txtnome);
             Controls.Add(Nome);
-            Controls.Add(label1);
             Controls.Add(groupBox1);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "Cadastro_Professores";
             Text = "Cadastro Professores";
-            Load += this.Cadastro_Professores_Load;
+            Load += Cadastro_Professores_Load;
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
+            groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -333,5 +362,7 @@
         private Button btnExcluir;
         private Button btnEditar;
         private GroupBox groupBox1;
+        private GroupBox groupBox2;
+        private DataGridView dataGridView1;
     }
 }
